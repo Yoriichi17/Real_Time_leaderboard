@@ -1,0 +1,107 @@
+.award-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff8e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.award-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e65100;
+}
+
+.award-input {
+  width: 95%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffecb3;
+}
+
+.dropdown-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.dropdown-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.dropdown-points {
+  color: #757575;
+  font-size: 13px;
+}
+
+.selected-user-box {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff3e0;
+  border-radius: 10px;
+  border: 1px solid #ffd180;
+}
+
+.selected-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff9800;
+  margin-bottom: 10px;
+}
+
+.award-btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.award-btn:hover {
+  background-color: #fb8c00;
+}
+
+.award-message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+}
