@@ -129,6 +129,3 @@ Visit `http://localhost:5173` in your browser.
 <img width="1916" height="906" alt="Screenshot 2025-07-15 220743" src="https://github.com/user-attachments/assets/402c7c9f-04f0-48ac-84e5-3f128a929de8" />
 <img width="1917" height="907" alt="Screenshot 2025-07-15 220820" src="https://github.com/user-attachments/assets/f5ca33ba-1f63-4f00-885c-9d469adeaf6b" />
 <img width="1916" height="911" alt="Screenshot 2025-07-15 220908" src="https://github.com/user-attachments/assets/6436979a-5c71-4ad9-b75d-227f3e4b9667" />
-
----
-```
