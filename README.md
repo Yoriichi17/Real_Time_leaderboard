@@ -88,7 +88,7 @@ DEFAULT_PFP=default_image_url
 ### 3. Setup Frontend
 
 ```bash
-cd ../frontend
+cd frontend
 npm install
 ```
 
