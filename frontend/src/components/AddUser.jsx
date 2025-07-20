@@ -4,6 +4,7 @@ import { getCroppedImg } from '../utils/cropImage';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import '../styles/AddUser.css';
+import { BASE_URL } from '../utils/link';
 
 function AddUser() {
   const [username, setUsername] = useState('');
@@ -81,7 +82,7 @@ function AddUser() {
         formData.append('avatar', croppedBlob, `${uuidv4()}.jpeg`);
       }
 
-      await axios.post('http://localhost:5000/api/user/register', formData);
+      await axios.post(`${BASE_URL}api/user/register`, formData);
 
       alert('User registered successfully');
       setUsername('');

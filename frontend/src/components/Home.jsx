@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Home.css';
 import socket from '../utils/socket';
+import { BASE_URL } from '../utils/link';
 
 function Home() {
   const [data, setData] = useState({
@@ -17,7 +18,7 @@ function Home() {
   // Fetch initial user list from backend
   const getUser = async (page = 1) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/user/fetchUsers?page=${page}&limit=10`);
+      const response = await axios.get(`${BASE_URL}api/user/fetchUsers?page=${page}&limit=10`);
       setData(response.data || {});
     } catch (err) {
       console.error("Failed to fetch users:", err);

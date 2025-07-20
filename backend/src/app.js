@@ -11,7 +11,10 @@ const coinsRoutes = require('./routes/coins.route');
 connectDB();
 
 // Middleware setup
-app.use(cors()); // Enable CORS for all origins
+app.use(cors({
+  origin: ['https://real-time-leaderboard-kappa.vercel.app/'], // frontend-url
+  credentials: true,
+}));
 app.use(express.json()); 
 app.use(express.urlencoded());
 app.use(express.static("public")); 

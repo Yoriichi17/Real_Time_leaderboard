@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/AwardPoints.css';
+import { BASE_URL } from '../utils/link';
 
 function AwardPoints() {
   const [query, setQuery] = useState('');
@@ -22,7 +23,7 @@ function AwardPoints() {
 
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/user/searchUsers?query=${encodeURIComponent(value)}`
+        `${BASE_URL}api/user/searchUsers?query=${encodeURIComponent(value)}`
       );
       console.log('Search response:', res.data);
       const list = res.data.users || res.data;
@@ -46,14 +47,14 @@ function AwardPoints() {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/coins/givePoints/${selectedUser._id}`
+        `${BASE_URL}api/coins/givePoints/${selectedUser._id}`
       );
 
       const awarded = res.data.awardedPoints;
       setMessage(`${selectedUser.username} was awarded ${awarded} points!`);
 
       const updatedRes = await axios.get(
-        `http://localhost:5000/api/user/searchUsers?query=${selectedUser.username}`
+        `${BASE_URL}api/user/searchUsers?query=${selectedUser.username}`
       );
 
       const updatedUser = (updatedRes.data.users || updatedRes.data).find(

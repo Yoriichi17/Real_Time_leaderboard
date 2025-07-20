@@ -1,0 +1,1 @@
+export const BASE_URL = "https://real-time-leaderboard-yaif.onrender.com/";
